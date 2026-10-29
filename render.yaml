@@ -38,7 +38,7 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        value: https://threads-api.onrender.com/api
+        value: https://threads-api-kqri.onrender.com/api
 
 databases:
   # 3. PostgreSQL Managed Database
