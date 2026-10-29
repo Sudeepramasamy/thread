@@ -26,12 +26,13 @@ services:
         value: AdminPassword123!
 
   # 2. Frontend React Vite Static Site
-  - type: static_site
+  - type: web
     name: threads-ui
+    runtime: static
     plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
